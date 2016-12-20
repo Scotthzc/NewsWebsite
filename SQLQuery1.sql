@@ -1,0 +1,1 @@
+﻿SELECT Name FROM DatabaseName..SysObjects Where XType='U' ORDER BY Name 
