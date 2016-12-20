@@ -10,7 +10,7 @@ using System.Configuration;
 
 public partial class type : System.Web.UI.Page
 {
-    SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=stuDB34;Integrated Security=True");
+    SqlConnection conn = new SqlConnection("Data Source=120.24.61.225;Initial Catalog=stuDB34;Persist Security Info=True;User ID=stuDB34;Password=stuDB34");
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Page.IsPostBack == false) {

@@ -44,7 +44,11 @@ public partial class insert : System.Web.UI.Page
             Response.Redirect("edit.aspx");
         }
         else {
-            Response.Write("<script>alert('数据库没有此项')</script>");
+            dr.Close();
+            string updateStr = "insert into type values('" + type + "')";
+            SqlCommand updateCmd = new SqlCommand(updateStr, conn);
+            updateCmd.ExecuteReader();
+            Response.Write("<script>alert('数据库没有此项分类,已更新')</script>");
         }
         
         
