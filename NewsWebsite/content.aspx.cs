@@ -10,7 +10,7 @@ using System.Configuration;
 
 public partial class content : System.Web.UI.Page
 {
-    SqlConnection conn = new SqlConnection("Data Source=120.24.61.225;Initial Catalog = stuDB34; Persist Security Info=True;User ID = stuDB34; Password=stuDB34");
+    SqlConnection conn = new SqlConnection("Data Source=120.24.61.225;Initial Catalog = pinglun; Persist Security Info=True;User ID = stuDB34; Password=stuDB34");
     protected void Page_Load(object sender, EventArgs e)
     {
         
@@ -72,7 +72,7 @@ public partial class content : System.Web.UI.Page
                 try
                 {
                     string str = "匿名用户";
-                    conn.ConnectionString = "Data Source=.;Initial Catalog=news;Integrated Security=True";
+                    conn.ConnectionString = "Data Source=120.24.61.225;Initial Catalog=stuDB34;Persist Security Info=True;User ID=stuDB34;Password=stuDB34";
                     conn.Open();
                     string sql1 = "insert into pinglun values('" + Request.QueryString["ID"] + "','" + TxtSpeak.Text + "','" + System.DateTime.Now + "','" + str + "')";
                     SqlCommand cmd1 = new SqlCommand(sql1, conn);

@@ -27,7 +27,7 @@ public partial class insert : System.Web.UI.Page
         publisher = txtpublisher.Text.ToString().Trim();
         publishdate = DateTime.Now.ToString();
 
-        SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=news;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Data Source=120.24.61.225;Initial Catalog=stuDB34;Persist Security Info=True;User ID=stuDB34;Password=stuDB34");
         conn.Open();
 
         int typeid=0;

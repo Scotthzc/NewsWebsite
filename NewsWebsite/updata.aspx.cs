@@ -48,7 +48,7 @@ public partial class updata : System.Web.UI.Page
         }
         publishdate = DateTime.Now.ToString();
         
-        conn = new SqlConnection("Data Source=.;Initial Catalog=news;Integrated Security=True");
+        conn = new SqlConnection("Data Source=120.24.61.225;Initial Catalog=stuDB34;Persist Security Info=True;User ID=stuDB34;Password=stuDB34");
         conn.Open();
 
         int typeid = 0;

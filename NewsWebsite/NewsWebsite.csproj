@@ -82,7 +82,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
     <Content Include="type.aspx" />
     <Content Include="updata.aspx" />
     <Content Include="Web.config" />
@@ -94,13 +93,6 @@
     </Compile>
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="delete.aspx.cs">
       <DependentUpon>delete.aspx</DependentUpon>

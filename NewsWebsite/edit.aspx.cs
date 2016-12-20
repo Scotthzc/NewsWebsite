@@ -22,7 +22,7 @@ public partial class edit : System.Web.UI.Page
             LinkButton tb = row.FindControl("LinkButton1") as LinkButton;
             id = tb.CommandArgument.ToString();
         }
-        SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=news;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Data Source=120.24.61.225;Initial Catalog=stuDB34;Persist Security Info=True;User ID=stuDB34;Password=stuDB34");
         conn.Open();
         string sqlstr = "delete from pinglun where fileid='"+id+"'";
        SqlCommand cmd = new SqlCommand(sqlstr, conn);
